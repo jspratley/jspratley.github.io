@@ -47,6 +47,13 @@ a:active {
 	
 }
 
+.nav p {
+	font-weight: bold;
+	border-right: 1px solid black;
+	display: inline;
+	padding-right: 5px;
+}
+
 .section {
 	font-family: 'Raleway', sans-serif;
 	margin-left: auto;
