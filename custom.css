@@ -1,6 +1,10 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+/*This is the style code for the heading.  h1 and h2 have slightly different style requirements.*/
 .header {
 	text-align: right;
-	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	padding: 10px;
 	width: 50%;
@@ -19,6 +23,7 @@
 	padding-bottom: 10px;
 }
 
+/*Styling for the links in the navbar.*/
 a  {
 	cursor: pointer;
 	color: black;
@@ -37,8 +42,8 @@ a:active {
 	font-weight: bold;
 }
 
+/*Style for the navbar itself.*/
 .nav {
-	font-family: 'Raleway', sans-serif;
 	width: 100px;
 	float: left;
 	padding: 20px;
@@ -47,6 +52,8 @@ a:active {
 	
 }
 
+/*I had to override the default paragraph CSS settings so that the links were
+evenly distributed along the navbar.*/
 .nav p {
 	font-weight: bold;
 	border-right: 1px solid black;
@@ -54,8 +61,8 @@ a:active {
 	padding-right: 5px;
 }
 
+/*Styling for the different content of each page.  It had to be center properly.*/
 .section {
-	font-family: 'Raleway', sans-serif;
 	margin-left: auto;
 	margin-right: auto;
 	clear: both;
@@ -64,13 +71,15 @@ a:active {
 	line-height: 150%;
 }
 
+/*This was added to prevent links in the content section from moving to the right.*/
 .section a:hover {
 	font-weight: bold;
 	padding-left: 0px;
 }
 
+/*Created a separate div for the contacts page so that its width was small enough to be
+centered properly.*/
 .info {
-	font-family: 'Raleway', sans-serif;
 	margin-left: auto;
 	margin-right: auto;
 	clear: both;
@@ -78,11 +87,14 @@ a:active {
 	padding: 5px;
 }
 
+/*Wanted consistency between the e-mail addresses above and the Facebook and LinkedIn
+links below.*/
+.info a {
+	display: block;
+}
+
+/*Links on the contacts page don't move to the left like the ones in the navbar.*/
 .info a:hover {
 	font-weight: bold;
 	padding-left: 0px;
-}
-
-.container {
-	background-color: #006699;
 }
