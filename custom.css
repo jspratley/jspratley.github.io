@@ -57,6 +57,11 @@ a:active {
 	line-height: 150%;
 }
 
+.section a:hover {
+	font-weight: bold;
+	padding-left: 0px;
+}
+
 .info {
 	font-family: 'Raleway', sans-serif;
 	margin-left: auto;
