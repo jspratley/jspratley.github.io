@@ -1,100 +1,96 @@
 body {
 	font-family: 'Raleway', sans-serif;
+	background-color: #4d0066;
+	overflow-x: hidden;
 }
 
 /*This is the style code for the heading.  h1 and h2 have slightly different style requirements.*/
 .header {
-	text-align: right;
+	text-align: center;
 	font-weight: 300;
 	padding: 10px;
-	width: 50%;
-	float: left;
-	border-right: 1px solid black;
+	background-color: #1dc9c9;
+	color: white;
+	width: 100%;
+	text-shadow: 2px 2px #000000;
+	margin-left: -10px;
+	margin-top: -10px;
 }
 
 .header h1 {
-	padding: 20px;
-}
-
-.header h2 {
-	padding-right: 20px;
-	padding-left: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	font-size: 80px;
 }
 
 /*Styling for the links in the navbar.*/
 a  {
 	cursor: pointer;
-	color: black;
 	text-decoration: none;
-	-webkit-transition: font-weight, 0.25s, ease;
-	transition: font-weight, 0.25s, ease;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #1dc9c9;
+	color: white;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+	border: 1px solid #1dc9c9;
+	font-weight: bold;
+	display: inline-block;
 }
 
 a:hover {
-	font-weight: bold;
-	padding-left: 10px;
+	background-color: white;
+    color: #1dc9c9;
 }
 
 a:active {
-	color: #cccccc;
-	font-weight: bold;
+	background-color: #1dc9c9;
+	color: white;
 }
 
-/*Style for the navbar itself.*/
-.nav {
-	width: 100px;
-	float: left;
-	padding: 20px;
-	max-width: auto;
-	line-height: 180%;
-	
+.row {
+	color: #4d0066;
+	text-align: center;
+	height: 300px;
+	margin-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
 }
 
-/*I had to override the default paragraph CSS settings so that the links were
-evenly distributed along the navbar.*/
-.nav p {
-	font-weight: bold;
-	border-right: 1px solid black;
-	display: inline;
-	padding-right: 5px;
-}
-
-/*Styling for the different content of each page.  It had to be center properly.*/
-.section {
-	margin-left: auto;
-	margin-right: auto;
-	clear: both;
-	width: 50%;
-	padding: 5px;
-	line-height: 150%;
-}
-
-/*This was added to prevent links in the content section from moving to the right.*/
-.section a:hover {
-	font-weight: bold;
-	padding-left: 0px;
-}
-
-/*Created a separate div for the contacts page so that its width was small enough to be
-centered properly.*/
-.info {
-	margin-left: auto;
-	margin-right: auto;
-	clear: both;
-	width: 250px;
-	padding: 5px;
-}
-
-/*Wanted consistency between the e-mail addresses above and the Facebook and LinkedIn
-links below.*/
-.info a {
+img {
+	width: 25%;
+	height: 110px;
 	display: block;
+	margin-left: 37%;
+	margin-right: 37%;
+	margin-bottom: 15px;
 }
 
-/*Links on the contacts page don't move to the left like the ones in the navbar.*/
-.info a:hover {
-	font-weight: bold;
-	padding-left: 0px;
+.resume {
+	width: 30%;
+	float: left;
+	padding: 5px;
+	border: 2px solid #1dc9c9;
+	height: 100%;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.projects {
+	width: 30%;
+	display: inline-block;
+	padding: 5px;
+	border: 2px solid #1dc9c9;
+	height: 100%;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.contact {
+	width: 30%;
+	float: right;
+	padding: 5px;
+	border: 2px solid #1dc9c9;
+	height: 100%;
+	border-radius: 5px;
+	background-color: white;
 }
